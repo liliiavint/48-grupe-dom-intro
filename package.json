@@ -2,14 +2,16 @@
   "name": "48-grupe-dom-intro",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "dev": "dead-server --host=localhost --port=4808",
+      "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Rimantas (https://github.com/belauzas)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "dead-server": "^1.0.9"
+      "dead-server": "^1.0.9"
   }
 }

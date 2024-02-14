@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM intro</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- 3rd-party -->
+    <!-- base -->
+    <link rel="stylesheet" href="./css/base/reset.css">
+    <link rel="stylesheet" href="./css/base/layout.css">
+    <!-- components -->
+    <link rel="stylesheet" href="./css/components/list.css">
+    <!-- page -->
+    <link rel="stylesheet" href="./css/pages/home.css">
+    <!-- SCRIPT: analytics -->
 </head>
+
 <body>
-    <main>
-    CONTENT
-    </main> 
+    <!-- SCRIPT: 3rd-party; pvz.: FB like, Twitter... -->
+
+    <main class="container">
+        <div class="row">
+            <div>
+                <h1>Kaip gaminami blynai!</h1>
+                <p>Šitie blynai yra patys skaniausi :P</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>Ingredientai</h2>
+                <ul>
+                    <li>Miltai</li>
+                    <li>Druska</li>
+                    <li>Vanduo</li>
+                    <li>Kiaušiniai</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Įranga/įrankiai</h2>
+                <ul>
+                    <li>Mikseris</li>
+                    <li>Keptuvė</li>
+                    <li>Šaukštas</li>
+                    <li>Lėkštė</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/main.js" type="module" defer></script>
 </body>
+
 </html>
