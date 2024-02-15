@@ -25,3 +25,11 @@ const ingridients = [...ingridientsDOM].map(
 );
 
 console.log(ingridients);
+
+// [...ingridientsDOM].forEach(
+//     ingridientDOM => ingridientDOM.innerText += ' (???)'
+// );
+
+for (const ingridientDOM of ingridientsDOM) {
+    ingridientDOM.innerText += ' (???)';
+}
