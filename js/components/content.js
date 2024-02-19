@@ -18,8 +18,8 @@ for(const item of data){
 }
 firstULDOM.innerHTML2 = HTML2;*/
 
-const data = ['Miltai', "", 'Druska', 'Vanduo', 'Kiausiniai'];
-const data2 = ['Miltai', 'Druska', 'Vanduo', 'Kiausiniai'];
+const data = ['Miltai', '  ', 'Druska', 'Vanduo', 'Kiausiniai'];
+const data2 = ['Mikseris', 'Keptuva', 'Saukstukas',' ', 'Lekste'];
 const firstULDOM = document.querySelectorAll('.list');
 
 let HTML1 = ' '
