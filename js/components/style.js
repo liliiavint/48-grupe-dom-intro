@@ -18,3 +18,21 @@ h1DOM.classList.add('italic');
 h1DOM.classList.remove('italic');
 
 console.log(h1DOM.classList);
+
+const contentDOM = document
+.getElementsByTagName('ul')[0]
+.getElementsByTagName('li');
+console.log(contentDOM);
+
+for( const liDOM of contentDOM){
+    liDOM.textContent+= '(1)';
+}
+
+const contentDOM2 = document.querySelector('.list>li')//pirma li
+const contentDOM3 = document.querySelectorAll('ul>li')// visa li
+const contentDOM4 = document.querySelectorAll('list:nth-of-type(1)>li')
+const contentDOM5 = document.querySelectorAll('list')[1]
+.querySelector('li');
+//.getElementById()
+//.querySelector()
+//.querySelectorAll()
