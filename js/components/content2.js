@@ -6,25 +6,25 @@ const data = [
     },
     {
         title: 'Iranga/irankiai',
-        list: ['Mikseris', 'Keptuva', 'Saukstukas',' ', 'Lekste'],
+        list: ['Mikseris', 'Keptuva', 'Saukstukas', 'Lekste'],
     }
 ], [
     {
     title: 'Ingredientai',
-    list:  ['Miltai', 'Druska', 'Vanduo', 'Kiausiniai'],
+    list:  ['Kiausiniai', 'Miltai', 'Druska', 'Vanduo', ],
 },
 {
     title: 'Iranga/irankiai',
-    list: ['Mikseris', 'Keptuva', 'Saukstukas',' ', 'Lekste'],
+    list: ['Lekste', 'Mikseris', 'Keptuva', 'Saukstukas'],
 }
 ]
 
 ]
 
-/*const contentDOM = document.getElementById('content');
+/*onst contentDOM = document.getElementById('content');
 
 let HTML = '';
-
+c
                 for (const column of data)
                 console.log(column);
 
@@ -37,27 +37,55 @@ let HTML = '';
                     <li>Kiaušiniai</li>
                 </ul>
                 </div>`*/
-const contentDOM = document.getElementById('content');
+const contentDOM = document.getElementById('container');
 
 let HTML = '';
-    contentDOM.innerHTML = HTML;
 
-for (const column of data)
-console.log(column.list);
-let listHTML = '';
-    for(const item of column.list){
-        if(item.trim().length === 0){
-            continue;
-        }
-        listHTML += <li>${item}</li>
+for (const column of data) {
+    console.log(column[0].list);
+    console.log(column[1].list);
 
+    let listHTML = '';
+    for (const item of column[0].list) {
+        listHTML += `<li>${item}</li>`;
     }
 
-HTML += `<div class="column">
-<h2>${column.title}</h2>
-<ul class="list">
-    ${listHTML}
-</ul>
-</div>`;
+    let listHTML1 = '';
+    for (const item1 of column[1].list) {
+        listHTML1 += `<li>${item1}</li>`;
+    }
 
-contentDOM.innerHTML = HTML;
+    HTML += `<div class="column">
+    <div><h2>${column[0].title}</h2></div>
+    <div class="list">
+        ${listHTML}
+    </div>
+    </div>
+    <div class="column">
+    <div><h2>${column[1].title}</h2></div>
+    <div class="list">
+        ${listHTML1} 
+    </div>
+    </div>`;
+}
+
+
+/*const contentDOM = document.getElementById('container');
+
+let HTML = '';
+
+data.forEach(column => {
+    column.forEach(column1 => {
+        let listHTML = '';
+       column1.list.forEach(item => {
+            listHTML += `<li>${item}</li>`;
+        });
+    HTML += `<div class="column">
+    <div><h2>${column1.title}</h2></div>
+    <div class="list">
+        ${listHTML}
+    </div>
+    </div>`
+   
+});
+});*/

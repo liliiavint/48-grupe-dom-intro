@@ -59,4 +59,3 @@ function renderList(listDOM, data){
 }
 renderList(uiDOM[0], data1)
 renderList(uiDOM[1], data2)
-
